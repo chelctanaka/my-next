@@ -1,12 +1,12 @@
 import prisma from "./prisma";
 
-// export async function getAllReviews() {
-//   return await prisma.reviews.findMany({
-//     orderBy: {
-//       read: "desc",
-//     },
-//   });
-// }
+export async function getAllReviews() {
+  return await prisma.reviews.findMany({
+    orderBy: {
+      read: "desc",
+    },
+  });
+}
 
 export function createBook(book) {
   const authors = books.volumeInfo.authors;
