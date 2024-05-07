@@ -1,6 +1,7 @@
 import { getAllReviews } from "@/lib/getter";
 import LinkedBookDetails from "@/components/LinkedBookDetails";
 
+export async function getAllReviews() {}
 export const dynamic = "force-dynamic";
 export default async function Home() {
   const reviews = await getAllReviews();
