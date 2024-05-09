@@ -1,15 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    serverActions: true,
+    // serverActions: true,
   },
   images: {
     remotePatterns: [
       {
-          hostname: 'books.google.com'
+        hostname: "books.google.com",
       },
-    ]
+    ],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
