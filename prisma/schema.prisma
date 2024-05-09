@@ -6,13 +6,18 @@ generator client {
 }
 
 datasource db {
-  provider  = "postgresql"
-  url       = env("POSTGRES_PRISMA_URL")
-  directUrl = env("POSTGRES_URL_NON_POOLING")
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
+// datasource db {
+//   provider          = "postgresql"
+//   url               = env("POSTGRES_PRISMA_URL")
+//   directUrl         = env("POSTGRES_URL_NON_POOLING")
+// }
+
 model reviews {
-  id        String  @id
+  id        String    @id
   title     String
   author    String
   price     Int
