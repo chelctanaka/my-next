@@ -23,7 +23,7 @@ export default function BooksLayout({ children }) {
           onClick={handleSearch}
           className="bg-blue-600 text-white rounded px-4 py-2 hover:bg-blue-500"
         >
-          検索
+          うんこ
         </button>
       </form>
       <hr />
